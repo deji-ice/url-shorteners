@@ -1,5 +1,5 @@
 import './App.css';
-import NavBar from './Components/Header';
+import NavBar from './Components/NavBar';
 import HeroSection from './Components/HeroSection';
 function App() {
   return (
