@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { Menu } from 'react-feather';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,15 +11,16 @@ const NavBar = () => {
   return (
     <>
       <nav className="flex flex-row lg:mt-4 lg:mr-48 lg:ml-24 mr-6 ml-6 text-gray-400 justify-between ">
-        <div className="lg:flex items-center justify-between py-5">
-          <span className="font-bold mt-6 text-3xl text-slate-900 cursor-pointer flex items-center font-[poppins]">
+        <div className="lg:flex  items-center justify-between py-5">
+          <span className="font-bold lg:mt-0 mt-6 text-3xl text-slate-900 cursor-pointer flex items-center font-[poppins]">
             Shortly
-          </span>
+          </span> 
           <div onClick={()=>setIsOpen(!isOpen)} className="text-3xl absolute right-8 top-10 cursor-pointer lg:hidden ">
             {isOpen ? (
               <span className="text-gray font-medium" >x</span>
             ) : (
-              <MenuRoundedIcon fontSize="large" />
+              <Menu /> 
+              
             )}
           </div>
 

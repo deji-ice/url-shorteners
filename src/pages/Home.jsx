@@ -1,9 +1,10 @@
 import React from "react";
-import NavBar from "../Components/Header";
+import HeroSection from "../Components/HeroSection";
+import NavBar from "../Components/NavBar";
 
 const Home = () => {
   return <div>
-    <NavBar/>
+    <HeroSection/>
   </div>;
 };
 
