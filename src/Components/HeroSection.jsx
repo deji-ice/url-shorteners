@@ -3,7 +3,7 @@ import working from '../Assets/illustration-working.svg'
 
 const HeroSection = () => {
   return (
-    <div className='lg:pl-10 overflow-hidden font-[poppins]'>
+    <div className='lg:pl-10 overflow-hidden font-[poppins] p-10'>
         <div className="flex flex-col-reverse justify-center items-center lg:flex-row lg:items-center lg:justify-between gap-32">
             <div className='flex flex-col justify-center items-center gap-4 p-4 lg:justify-start lg:items-start '>
                 <h2 className='font-bold text-7xl text-slate-900 text-center lg:text-start'>More than just shorter links</h2>
