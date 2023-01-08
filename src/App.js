@@ -5,7 +5,7 @@ import Features from './pages/Features';
 function App() {
   return (
 <>
-<div >
+<div className=''>
   <NavBar/>
   <Home/>
   <Features/>
