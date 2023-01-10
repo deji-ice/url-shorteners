@@ -3,14 +3,14 @@ import working from '../Assets/illustration-working.svg'
 
 const HeroSection = () => {
   return (
-    <div className='lg:pl-10 overflow-hidden font-[poppins]'>
-        <div className="flex flex-col-reverse justify-center items-center lg:flex-row lg:items-center lg:justify-between gap-32">
-            <div className='flex flex-col justify-center items-center gap-4 p-4 lg:justify-start lg:items-start '>
-                <h2 className='font-bold text-7xl text-slate-900 text-center lg:text-start'>More than just shorter links</h2>
-                <p className='text-2xl text-gray-500 text-center lg:text-start'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
-                <button className='bg-cyan-500 py-2 px-4 rounded-full text-white text-xl font-semibold w-48 hover:bg-cyan-200 '>Get started</button>
+    <div className='lg:pl-10 overflow-hidden font-[poppins] p-5 lg:mb-[10rem]'>
+        <div className="flex flex-col-reverse justify-center items-center lg:flex-row lg:items-center lg:ml-[-7rem] lg:mr-[5rem] lg:justify-between ">
+            <div className='flex flex-col justify-center items-center mt-3 gap-4 p-auto  lg:mt-10 lg:ml-20  lg:justify-start lg:items-start '>
+                <h2 className='font-bold text-3xl lg:text-7xl lg:ml-14 lg:p-5 lg:leading-snug m-auto mt-5  text-slate-900 text-center lg:text-start'>More than just shorter links</h2>
+                <p className='text-md m-4 text-gray-500 lg:text-xl lg:ml-[5rem] lg:pr-10 lg:mt-[-2rem] text-center lg:text-start'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                <button className='bg-cyan-500 m-4 py-2 px-4 rounded-full text-white text-xl lg:w-[15rem] lg:mt-[0rem] lg:h-[4rem] lg:ml-[5rem] lg:text-xl font-semibold w-48 hover:bg-cyan-200 '>Get started</button>
             </div>
-            <img src={working} alt="" className='w-[600px] h-auto lg:relative lg:left-16 ' />
+            <img src={working} alt="working image" className='w-[70rem] h-auto lg:relative lg:left-[13rem] lg:mb-10 ' />
         </div>
     </div>
   )
