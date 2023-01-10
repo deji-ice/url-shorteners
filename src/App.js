@@ -6,13 +6,8 @@ function App() {
 <>
 <div className=''>
   <NavBar/>
-<<<<<<< HEAD
-  <HeroSection />
-  <Footer />
-=======
   <Home/>
   <Features/>
->>>>>>> ffc9cfe9848773143bae2fbd653c46d8b1a50ec8
 </div>
 </>
   );
