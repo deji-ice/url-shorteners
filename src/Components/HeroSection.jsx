@@ -10,7 +10,7 @@ const HeroSection = () => {
                 <p className='text-md m-4 text-gray-500 lg:text-xl lg:ml-[5rem] lg:pr-10 lg:mt-[-2rem] text-center lg:text-start'>Build your brand's recognition and get detailed insights on how your links are performing.</p>
                 <button className='bg-cyan-500 m-4 py-2 px-4 rounded-full text-white text-xl lg:w-[15rem] lg:mt-[0rem] lg:h-[4rem] lg:ml-[5rem] lg:text-xl font-semibold w-48 hover:bg-cyan-200 '>Get started</button>
             </div>
-            <img src={working} alt="working image" className='w-[70rem] h-auto lg:relative lg:left-[13rem] lg:mb-10 ' />
+            <img src={working} alt="working-img" className='w-[70rem] h-auto lg:relative lg:left-[13rem] lg:mb-10 ' />
         </div>
     </div>
   )
