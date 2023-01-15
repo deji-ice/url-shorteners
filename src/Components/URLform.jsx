@@ -74,7 +74,7 @@ function URLform() {
           Shorten It!
         </button>
       </form>
-      <LinkResults results={shortenedLinks} />
+      <LinkResults results={shortenedLinks} links={links}loading={loading}/>
     </div>
   );
 }
