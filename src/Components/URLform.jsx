@@ -32,7 +32,10 @@ function URLform() {
     } catch (error) {}
   };
   useEffect(() => {
-    fetchData();
+    if(links.length){
+      fetchData();
+    }
+  
   }, [links]);
 
   const {
@@ -69,7 +72,7 @@ function URLform() {
         <button
           type="submit"
           id="submit"
-          className="w-full h-10 bg-indigo-600 rounded-md text-white lg:text-xl lg:w-[10rem] lg:h-14 hover:bg-indigo-400 duration-500"
+          className="w-auto pl-10 pr-10 h-10 bg-indigo-600 rounded-md text-white lg:text-xl lg:w-[10rem] lg:h-14 hover:bg-indigo-400 duration-500"
         >
           Shorten It!
         </button>
