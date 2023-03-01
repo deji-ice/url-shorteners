@@ -10,7 +10,7 @@ const NavBar = () => {
   ];
   return (
     <>
-      <nav className="flex flex-row lg:mt-7 lg:mr-48 lg:ml-24 mr-6 ml-6 text-gray-400 justify-between ">
+      <nav className="flex flex-row  lg:mr-48 lg:ml-24 mr-6 ml-6 text-gray-400 justify-between ">
         <div className="lg:flex  items-center justify-between py-5">
           <span className="font-bold lg:mt-0 mt-6 text-3xl lg:text-4xl text-slate-900 cursor-pointer flex items-center font-[poppins]">
             Shortly
@@ -39,7 +39,7 @@ const NavBar = () => {
                 </a>
               </li>
             ))}
-            <div className="lg:absolute right-8 top-10">
+            <div className="lg:absolute right-8 top-5">
             <button className=" bg-gray-500 rounded-full text-white h-9 py-2 px-3 font-[poppins] lg:h-10 lg:w-18 lg:text-md lg:font-semibold hover:bg-blue-500 duration-300">
               Log In
             </button>
