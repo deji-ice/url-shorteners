@@ -32,7 +32,10 @@ function URLform() {
     } catch (error) {}
   };
   useEffect(() => {
-    fetchData();
+    if(links.length){
+      fetchData();
+    }
+  
   }, [links]);
 
   const {
@@ -47,21 +50,21 @@ function URLform() {
     setLinks(data.link);
   };
   return (
-    <div className="flex flex-col items-center bg-slate-600 rounded-md text-center justify-center lg:w-10/12 lg:bottom-[-28rem] lg:h-[10rem] lg:left-[7rem] lg:absolute lg:m-10 lg:mt-[50rem]  relative bottom-14 mb-[-2rem] m-8 h-[8rem] ">
+    <div className="flex flex-col items-center bg-slate-600 rounded-md text-center justify-center lg:w-10/12 lg:bottom-[100rem]  lg:h-[10rem] lg:sticky lg:mt-[5rem] lg:m-0   relative bottom-14 mb-[-2rem] m-8 h-[8rem] ">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full items-center flex flex-col p-10 justify-center space-y-2 lg:items-center  lg:flex-row lg:space-y-4"
+        className="w-full flex flex-col p-10  mt-5 lg:mt-[-10px] space-y-5 lg:space-y-[13px] lg:items-center lg:justify-between  lg:flex-row "
       >
-        <div className="flex flex-col lg:space-y-10">
+        <div className="flex flex-col lg:space-y-0 space-y-6 ">
           <Input
-            className="h-10 rounded-md lg:h-14 lg:w-[60rem] lg:text-xl"
+            className="h-10 rounded-md lg:h-14 lg:w-full lg:pr-[30rem] lg:text-xl lg:mr-10"
             name="link"
             type="text"
             placeholder="Shorten link here..."
             {...register("link", { required: true })}
           />
           {errors.link && (
-            <span className="text-red-500 text-xs italic m-3">
+            <span className="text-red-500 text-xs italic m-3 absolute top-8 left-16 lg:top-24 lg:left-[23rem]">
               This field is required
             </span>
           )}
@@ -69,12 +72,12 @@ function URLform() {
         <button
           type="submit"
           id="submit"
-          className="w-full h-10 bg-indigo-600 rounded-md text-white lg:text-xl lg:w-[10rem] lg:h-14 hover:bg-indigo-400 duration-500"
+          className="w-auto pl-10 pr-10 h-10 bg-indigo-600 rounded-md text-white lg:text-xl lg:w-[12rem] lg:h-14 hover:bg-indigo-400 duration-500"
         >
           Shorten It!
         </button>
       </form>
-      <LinkResults results={shortenedLinks} links={links}loading={loading}/>
+      <LinkResults results={shortenedLinks} links={links}loading={loading} className/>
     </div>
   );
 }
