@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu } from 'react-feather';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,13 +40,22 @@ const NavBar = () => {
                 </a>
               </li>
             ))}
+
             <div className="lg:absolute right-8 top-5">
+
+            {/* redirects to login page */}
+            <Link to="/signin">
             <button className=" bg-gray-500 rounded-full text-white h-9 py-2 px-3 font-[poppins] lg:h-10 lg:w-18 lg:text-md lg:font-semibold hover:bg-blue-500 duration-300">
               Log In
             </button>
-            <button className="bg-sky-500 text-white py-2 px-3 ml-14 rounded-full font-[poppins] text-sm h-9 lg:h-10 lg:w-18 lg:text-md lg:font-semibold lg:ml-8 hover:bg-indigo-400 duration-500">
+            </Link>
+
+            {/* redirects to sign up page */}
+            <Link to="/registration">
+              <button className="bg-sky-500 text-white py-2 px-3 ml-14 rounded-full font-[poppins] text-sm h-9 lg:h-10 lg:w-18 lg:text-md lg:font-semibold lg:ml-8 hover:bg-indigo-400 duration-500">
               Sign Up
-            </button>
+              </button>
+            </Link>
             </div>
           </ul>
         </div>
