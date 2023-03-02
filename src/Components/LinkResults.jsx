@@ -12,16 +12,19 @@ export const LinkResults = ({ results, loading, links }) => {
   }, [isCopied]);
 
   return (
-    <div className="absolute lg:top-[10.5rem]">
+    <div className="absolute lg:top-[10.5rem]  top-[8.5rem] ">
       {results ? (
-        <div className="flex space-x-5 justify-between bg-white p-2 lg:w-[50rem] ">
+        <div className="flex space-x-5 lg:justify-between justify-center bg-[#fafdff] rounded-br-lg p-2 lg:w-[50rem] w-[20rem] ">
           <ul>
-            <li className="flex lg:px-10 lg:py-1 items-center ">
+            <li className="flex lg:px-10 lg:py-1 items-center text-sm flex-col  lg:space-x-0  space-x-1 lg:flex-row ">
+              <div className="flex flex-row lg:space-x-0 space-x-5 ">
               <p className="lg:pr-[18rem]">{links}</p>
-              <p className=" lg:pr-10 text-blue-500">{results}</p>
+              <p className=" lg:pr-10 text-blue-500">{results}</p> 
+              </div>
+            
               <CopyToClipboard
                 text={results}
-                className={`h-auto w-24 p-1 text-md text-white rounded-md ${
+                className={`h-auto w-24 p-1 mt-3 text-md text-white rounded-md ${
                   isCopied ? `bg-indigo-500` : `bg-sky-500`
                 }`}
                 onCopy={() => setIsCopied(true)}

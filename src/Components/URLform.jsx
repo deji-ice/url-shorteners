@@ -50,10 +50,10 @@ function URLform() {
     setLinks(data.link);
   };
   return (
-    <div className="flex flex-col items-center bg-slate-600 rounded-md text-center justify-center lg:w-10/12 lg:bottom-[100rem]  lg:h-[10rem] lg:sticky lg:mt-[5rem] lg:m-0   relative bottom-14 mb-[-2rem] m-8 h-[8rem] ">
+    <div className="flex flex-col items-center bg-slate-600 rounded-md text-center justify-center lg:w-10/12 lg:bottom-[100rem]  lg:h-[10rem] lg:sticky lg:mt-[5rem] lg:m-0   relative bottom-1 mb-[-2rem] m-8 h-[8rem] ">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full flex flex-col p-10  mt-5 lg:mt-[-10px] space-y-5 lg:space-y-[13px] lg:items-center lg:justify-between  lg:flex-row "
+        className="w-full flex flex-col p-10  lg:mt-[-10px] space-y-5 lg:space-y-[13px] lg:items-center lg:justify-between  lg:flex-row "
       >
         <div className="flex flex-col lg:space-y-0 space-y-6 ">
           <Input

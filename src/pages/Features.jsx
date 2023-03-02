@@ -5,12 +5,12 @@ import { LinkResults } from "../Components/LinkResults";
 
 const Features = () => {
   return (
-    <div className="bg-indigo-50 font-[poppins]">
+    <div className="bg-indigo-50 font-[poppins] lg:mt-0 mt-40" id="features">
       <div className="flex flex-col items-center">
         <URLform />
       </div>
-      <div className="flex flex-col items-center  text-center lg:pt-[10rem] lg:mb-[7rem] ">
-        <p className="text-2xl font-bold  lg:text-5xl lg:mb-[1rem] ">Advanced Statistics</p>
+      <div className="flex flex-col items-center  text-center lg:pt-[10rem] lg:mb-[7rem] pt-[5rem] m-10 lg:m-0" id="about" >
+        <p className="text-2xl font-bold  lg:text-5xl lg:mb-[1rem] " >Advanced Statistics</p>
         <p className="mt-5 text-slate-400 p-auto lg:text-xl lg:w-[50rem]">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
