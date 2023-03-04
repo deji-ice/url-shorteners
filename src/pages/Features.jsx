@@ -2,18 +2,28 @@ import React from "react";
 import URLform from "../Components/URLform";
 import { Clock, Edit, Aperture } from "react-feather";
 import { LinkResults } from "../Components/LinkResults";
+import downArrow from "../Assets/PngItem_2647791.png"
 
 const Features = () => {
   return (
-    <div className="bg-indigo-50 font-[poppins] lg:mt-0 mt-40" id="features">
+    <>
+    <img src={downArrow} className="animate-bounce w-16 h-24 flex lg:hidden ml-[9rem] mt-10"/>
+    <div className="bg-indigo-50 lg:mt-0 mt-5" id="features">
       <div className="flex flex-col items-center">
         <URLform />
       </div>
-      <div className="flex flex-col items-center  text-center lg:pt-[10rem] lg:mb-[7rem] pt-[5rem] m-10 lg:m-0" id="about" >
-        <p className="text-2xl font-bold  lg:text-5xl lg:mb-[1rem] " >Advanced Statistics</p>
-        <p className="mt-5 text-slate-400 p-auto lg:text-xl lg:w-[50rem]">
-          Track how your links are performing across the web with our advanced
-          statistics dashboard.
+      <div
+        className="flex flex-col items-center  text-center lg:pt-[10rem] lg:mb-[7rem] pt-[5rem] m-10 lg:m-0"
+        id="about"
+      >
+        <p className="text-2xl font-bold  lg:text-5xl lg:mb-[1rem] ">
+          Advanced Statistics
+        </p>
+        <p className="mt-5  text-slate-400 p-auto text-md lg:text-xl lg:w-[50rem]">
+          ShortLynks-- A web app that shortens URLs, has
+          generated over 100,000 shortened links since its launch in 2022.
+          The app's user base has grown by an average of 25% per year, and the
+          average length of a shortened link is 12 characters.
         </p>
       </div>
       <div className="flex flex-col items-center m-10 space-y-20 lg:space-y-5 lg:flex-row lg:space-x-10 lg:justify-center">
@@ -58,6 +68,8 @@ const Features = () => {
         </div>
       </div>
     </div>
+    </>
+
   );
 };
 

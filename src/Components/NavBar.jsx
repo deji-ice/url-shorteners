@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu } from "react-feather";
+import { Menu , Minimize2} from "react-feather";
 import { HashLink as Link } from "react-router-hash-link";
 
 const NavBar = () => {
@@ -8,19 +8,21 @@ const NavBar = () => {
   return (
     <>
       <nav className="flex flex-row  lg:mr-48 lg:ml-24 mr-6 ml-6 text-gray-400 justify-between ">
-        <div className="lg:flex  items-center justify-between py-5">
+
+        <div className="lg:flex  items-center justify-between l:py-5 py-1">
           <Link to="/" smooth>
-            <span className="font-bold lg:mt-0 mt-6 text-4xl   lg:text-4xl text-slate-900 cursor-pointer flex items-center font-[poppins]">
-              Shortly
+            <span className="font-bold lg:mt-0 mt-6 text-3xl   lg:text-4xl text-slate-900 cursor-pointer flex items-center font-[poppins]">
+              ShortLynks
             </span>
           </Link>
 
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className="text-3xl absolute right-8 top-10 cursor-pointer lg:hidden pt-3 lg:pt-0 "
+            className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden pt-3 lg:pt-0 "
           >
             {isOpen ? (
-              <span className="text-gray font-medium">x</span>
+              <span className="text-gray font-medium"><Minimize2/></span>
+
             ) : (
               <Menu />
             )}
@@ -28,7 +30,9 @@ const NavBar = () => {
 
           <ul
             className={`lg:flex lg:justify-between lg:items-center lg:pb-0 pb-12 absolute lg:static lg:z-auto z[-1] left-0 w-full 
-            lg:w-auto lg:pl-18 pl-9 transition-all duration-500 ease-in  bg-indigo-50 ${
+
+            lg:w-auto lg:pl-18 pl-9 transition-all duration-[800ms] ease-in-out  bg-indigo-50 ${
+
               isOpen ? "top-20 " : "top-[-400px] "
             } 
             `}
