@@ -20,7 +20,7 @@ const Features = () => {
           Advanced Statistics
         </p>
         <p className="mt-5  text-slate-400 p-auto text-md lg:text-xl lg:w-[50rem]">
-          A web app that shortens URLs, has
+          ShortLynks-- A web app that shortens URLs, has
           generated over 100,000 shortened links since its launch in 2022.
           The app's user base has grown by an average of 25% per year, and the
           average length of a shortened link is 12 characters.
@@ -69,6 +69,7 @@ const Features = () => {
       </div>
     </div>
     </>
+
   );
 };
 

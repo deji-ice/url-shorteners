@@ -8,6 +8,7 @@ const NavBar = () => {
   return (
     <>
       <nav className="flex flex-row  lg:mr-48 lg:ml-24 mr-6 ml-6 text-gray-400 justify-between ">
+
         <div className="lg:flex  items-center justify-between l:py-5 py-1">
           <Link to="/" smooth>
             <span className="font-bold lg:mt-0 mt-6 text-3xl   lg:text-4xl text-slate-900 cursor-pointer flex items-center font-[poppins]">
@@ -21,6 +22,7 @@ const NavBar = () => {
           >
             {isOpen ? (
               <span className="text-gray font-medium"><Minimize2/></span>
+
             ) : (
               <Menu />
             )}
@@ -28,7 +30,9 @@ const NavBar = () => {
 
           <ul
             className={`lg:flex lg:justify-between lg:items-center lg:pb-0 pb-12 absolute lg:static lg:z-auto z[-1] left-0 w-full 
+
             lg:w-auto lg:pl-18 pl-9 transition-all duration-[800ms] ease-in-out  bg-indigo-50 ${
+
               isOpen ? "top-20 " : "top-[-400px] "
             } 
             `}

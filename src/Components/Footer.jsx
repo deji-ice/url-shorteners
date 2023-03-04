@@ -10,6 +10,7 @@ const Footer = () => {
     <div className="text-white" id="resources">
       <div className="bg-[#674E8A] px-4 py-16 flex flex-col justify-center items-center">
         <p className="text-3xl font-bold text-center">Boost your links today</p>
+
         <Link to="#features" smooth>
           <button className="bg-[#38C3DA] text-xl font-semibold rounded-full px-8 py-2 mt-8">
             Get started
