@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="text-white" id="resources">
       <div className="bg-[#674E8A] px-4 py-16 flex flex-col justify-center items-center">
-        <p className="text-3xl font-bold ">Boost your links today</p>
+        <p className="text-3xl font-bold text-center">Boost your links today</p>
         <Link to="#features" smooth>
           <button className="bg-[#38C3DA] text-xl font-semibold rounded-full px-8 py-2 mt-8">
             Get started
@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-[#252329] px-24 py-12 flex flex-col justify-center items-center lg:flex-row lg:justify-around lg:items-start">
-        <p className="font-bold text-3xl lg:mr-[15rem]">Shortly</p>
+        <p className="font-bold text-3xl lg:mr-[15rem]">ShortLynks</p>
 
         <div className="flex flex-col text-center  lg:flex-row lg:text-start lg:gap-[7rem]">
           <div className="flex flex-col gap-2 mt-6 text-sm lg:mt-0 cursor-pointer lg:ml-16" >
