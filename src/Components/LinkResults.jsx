@@ -18,7 +18,7 @@ export const LinkResults = ({ results, loading, links }) => {
           <ul>
             <li className="flex lg:px-10 lg:py-1 items-center text-sm flex-col  lg:space-x-0  space-x-1 lg:flex-row ">
               <div className="flex flex-row lg:space-x-0 space-x-5 ">
-              <p className="lg:pr-[18rem]">{links}</p>
+              <p className="lg:pr-[18rem] lg:flex hidden">{links}</p>
               <p className=" lg:pr-10 text-blue-500">{results}</p> 
               </div>
             
